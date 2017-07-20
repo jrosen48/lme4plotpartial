@@ -1,0 +1,17 @@
+Package: lme4plotpartial
+Type: Package
+Title: Plots the complete pooling, no pooling, and partially pooled estimates for a mixed effects model
+Version: 0.1.0
+Authors@R: person(c("Joshua", "M"), "Rosenberg", role = c("aut", "cre"), email = "jmichaelrosenberg@gmail.com")
+Maintainer: Joshua M. Rosenberg <jmichaelrosenberg@gmail.com>
+Description: Plots the complete pooling, no pooling, and partially pooled estimates for a mixed effects model.
+    Scholars have defined mixed effects models as a compromise between complete pooling estimates (i.e., those 
+    from a linear model ignoring a grouping factor), no pooling estimates (i.e., a linear model for which each
+    level of the grouping factor is dummy-coded), and partially pooled estimates (i.e., those from mixed effects 
+    models, for which group-specific estimates are shrunken to (or gather strength from) the overall estimates 
+    (Gelman & Hill, 2004). This code is adapted from Mahr (https://tjmahr.github.io/plotting-partial-pooling-in-mixed-effects-models/).
+License: MIT
+Imports: dplyr, lme4
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
