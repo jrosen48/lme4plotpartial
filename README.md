@@ -14,3 +14,7 @@ Has one function, `plot_partial_pooling()`, used as follows:
 
     library(dplyr)
     plot_partial_pooling(storms, y_var = wind, x_var = pressure, group = year)
+    
+ # Future Improvements
+ 
+ - Take additional arguments for covariates and additional random effects. 
