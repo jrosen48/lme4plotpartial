@@ -6,7 +6,6 @@
 #' @return a ggplot2 plot
 #' @examples
 #' library(dplyr)
-#' storms
 #' plot_partial_pooling(storms, y_var = wind, x_var = pressure, group = year)
 #' @export
 
