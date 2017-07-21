@@ -23,6 +23,5 @@ Plot partial pooling estimates for a linear mixed effects model
 }
 \examples{
 library(dplyr)
-storms
 plot_partial_pooling(storms, y_var = wind, x_var = pressure, group = year)
 }
