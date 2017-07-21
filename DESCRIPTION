@@ -15,7 +15,12 @@ Description: Plots the complete pooling, no pooling, and partially pooled estima
     models, for which group-specific estimates are shrunken to (or gather strength from) the overall estimates 
     (Gelman & Hill, 2007).
 License: MIT + file LICENSE
-Imports: dplyr, lme4
+Imports: dplyr, lme4,
+    tibble,
+    stats,
+    magrittr,
+    rlang,
+    ggplot2
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1

@@ -22,21 +22,19 @@ Has one function, `plot_partial_pooling()`, used as follows:
 
 ``` r
 library(lme4plotpartial)
-library(dplyr)
+library(dplyr, warn.conflicts = FALSE)
 #> Warning: package 'dplyr' was built under R version 3.4.1
-#> 
-#> Attaching package: 'dplyr'
-#> The following objects are masked from 'package:stats':
-#> 
-#>     filter, lag
-#> The following objects are masked from 'package:base':
-#> 
-#>     intersect, setdiff, setequal, union
 library(ggforce)
 #> Warning: package 'ggforce' was built under R version 3.4.1
 #> Loading required package: ggplot2
 
 p <- plot_partial_pooling(storms, y_var = wind, x_var = pressure, group = year)
+#> Warning in checkConv(attr(opt, "derivs"), opt$par, ctrl = control
+#> $checkConv, : Model failed to converge with max|grad| = 100.388 (tol =
+#> 0.002, component 1)
+#> Warning in checkConv(attr(opt, "derivs"), opt$par, ctrl = control$checkConv, : Model is nearly unidentifiable: very large eigenvalue
+#>  - Rescale variables?;Model is nearly unidentifiable: large eigenvalue ratio
+#>  - Rescale variables?
 
 # Split the facets over several pages
 p + facet_wrap_paginate("year", ncol = 3, nrow = 4, page = 1)

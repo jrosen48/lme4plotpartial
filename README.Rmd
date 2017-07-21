@@ -33,7 +33,7 @@ Has one function, `plot_partial_pooling()`, used as follows:
 
 ```{r}
 library(lme4plotpartial)
-library(dplyr)
+library(dplyr, warn.conflicts = FALSE)
 library(ggforce)
 
 p <- plot_partial_pooling(storms, y_var = wind, x_var = pressure, group = year)
