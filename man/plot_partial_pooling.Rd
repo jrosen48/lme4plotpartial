@@ -4,7 +4,7 @@
 \alias{plot_partial_pooling}
 \title{Plot partial pooling estimates for a linear mixed effects model}
 \usage{
-plot_partial_pooling(df, y_var, x_var, group, ...)
+plot_partial_pooling(df, y_var, x_var, group)
 }
 \arguments{
 \item{df}{a data.frame containing the variables used in the model}

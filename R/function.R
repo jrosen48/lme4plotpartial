@@ -12,7 +12,7 @@
 #' plot_partial_pooling(storms, y_var = wind, x_var = pressure, group = year)
 #' @export
 
-plot_partial_pooling <- function(df, y_var, x_var, group, ...) {
+plot_partial_pooling <- function(df, y_var, x_var, group) {
     # group_enquo <- quo(year)
     # y_var_enquo <- quo(wind)
     # x_var_enquo <- quo(pressure)
